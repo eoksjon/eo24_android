@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_bank_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_item"
+    android:focusable="true"
+    android:clickable="true"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+
+    <Button
+        android:id="@+id/btnRemoveBank"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgBankItem"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/profile_item_delete" />
+
+    <CheckBox
+        android:id="@+id/cboxActiveBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnRemoveBank"
+        android:layout_alignBottom="@+id/btnRemoveBank"
+        android:layout_toLeftOf="@+id/btnRemoveBank"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/txtBankItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cboxActiveBank"
+        android:layout_toLeftOf="@+id/cboxActiveBank"
+        android:layout_toRightOf="@+id/imgBankItem"
+        android:textSize="14sp"
+        android:text="Bank account" />
+
+    <TextView
+        android:id="@+id/txtBankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBankItem"
+        android:layout_below="@+id/txtBankItem"
+        android:textSize="12sp"
+        android:text="Bank name" />
+
+    <ImageView
+        android:id="@+id/imgBankItem"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="8dp"
+        android:src="@drawable/ic_action_bank" />
+
+</RelativeLayout>

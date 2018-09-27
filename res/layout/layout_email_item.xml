@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_email_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_item"
+    android:focusable="true"
+    android:clickable="true"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+
+    <ImageView
+        android:id="@+id/imgEmailItem"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/ic_action_email" />
+
+    <Button
+        android:id="@+id/btnRemoveEmail"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgEmailItem"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/profile_item_delete" />
+
+    <CheckBox
+        android:id="@+id/cboxActiveEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnRemoveEmail"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/txtEmailItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnRemoveEmail"
+        android:layout_alignBottom="@+id/btnRemoveEmail"
+        android:layout_toRightOf="@+id/imgEmailItem"
+        android:text="Email"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_main_title"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_auth_m_id"
+        android:textColor="@android:color/black" />
+    
+    <ImageButton
+        android:id="@+id/imgbtnMID"
+        android:layout_width="88dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_m_id" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_auth_p_lingi"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imgbtn1"
+            android:layout_width="88dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_seb" />
+
+        <ImageButton
+            android:id="@+id/imgbtn2"
+            android:layout_width="88dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_swedbank" />
+
+        <ImageButton
+            android:id="@+id/imgbtn3"
+            android:layout_width="88dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_sampo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imgbtn4"
+            android:layout_width="88dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_nordea" />
+
+        <ImageButton
+            android:id="@+id/imgbtn5"
+            android:layout_width="88dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_lhv" />
+
+    </LinearLayout>
+
+</LinearLayout>

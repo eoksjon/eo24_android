@@ -1,0 +1,136 @@
+	class GetInboxTask extends AsyncTask<Void, Void, Boolean>
+	{
+	    private ProgressDialog progressDialog = new ProgressDialog(InboxActivity.this);
+	    InputStream inputStream = null;
+	    String result = ""; 
+
+	    @Override
+	    protected void onPreExecute() {
+	        progressDialog.setMessage("Laadimine...");
+	        progressDialog.show();
+	        progressDialog.setOnCancelListener(new OnCancelListener() 
+	        {
+				@Override
+				public void onCancel(DialogInterface dialog)
+				{
+	            	GetInboxTask.this.cancel(true);
+				}
+	        });
+	    }
+	    
+		@Override
+		protected Boolean doInBackground(Void... params)
+		{
+	    	String url_select = "http://www.eoksjon24.ee/ea.api?action=operation";
+	        String postfix1 = "&activity=account_email_delete";
+	        String postfix2 = "&email=";
+	        String postfix3 = "&stack=";
+	        String stack = "";
+
+	        // TODO: attempt authentication against a network service.
+			try
+			{
+				stack = MySingleton.getInstance().SHA1(MySingleton.getInstance().getSALT())
+						+ MySingleton.getInstance().SHA1(Integer.toString(MySingleton.getInstance().getUserID()));
+			} catch (NoSuchAlgorithmException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (UnsupportedEncodingException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			finally
+			{				
+			}
+			
+			url_select = url_select + postfix1 + postfix2 + postfix3 + stack;
+			Log.i("REQUEST", url_select);				
+
+			ArrayList<NameValuePair> param = new ArrayList<NameValuePair>();
+
+	        try 
+	        {
+	            // Set up HTTP post
+
+	            // HttpClient is more then less deprecated. Need to change to URLConnection
+	            HttpClient httpClient = new DefaultHttpClient();
+
+	            HttpPost httpPost = new HttpPost(url_select);
+	            httpPost.setEntity(new UrlEncodedFormEntity(param));
+	            HttpResponse httpResponse = httpClient.execute(httpPost);
+	            HttpEntity httpEntity = httpResponse.getEntity();
+
+	            // Read content & Log
+	            inputStream = httpEntity.getContent();
+	        } catch (UnsupportedEncodingException e1) 
+	        {
+	            Log.e("UnsupportedEncodingException", e1.toString());
+	            e1.printStackTrace();
+	        } catch (ClientProtocolException e2) 
+	        {
+	            Log.e("ClientProtocolException", e2.toString());
+	            e2.printStackTrace();
+	        } catch (IllegalStateException e3) 
+	        {
+	            Log.e("IllegalStateException", e3.toString());
+	            e3.printStackTrace();
+	        } catch (IOException e4) 
+	        {
+	            Log.e("IOException", e4.toString());
+	            e4.printStackTrace();
+	        }
+	        // Convert response to string using String Builder
+	        try 
+	        {
+	            BufferedReader bReader = new BufferedReader(new InputStreamReader(inputStream, "utf-8"), 8);
+	            StringBuilder sBuilder = new StringBuilder();
+
+	            String line = null;
+	            while ((line = bReader.readLine()) != null) 
+	            {
+	                sBuilder.append(line + "\n");
+	            }
+
+	            inputStream.close();
+	            result = sBuilder.toString();
+
+	        } catch (Exception e) 
+	        {
+	            Log.e("StringBuilding & BufferedReader", "Error converting result " + e.toString());
+	        }
+			return null;
+		}		
+
+		@Override
+	    protected void onPostExecute(final Boolean success) 
+	    {
+			Log.i("RESULT", result);			
+	        //parse JSON data
+        	try
+			{
+				JSONObject jObject = new JSONObject(result);
+                String result = jObject.getString("result");
+                boolean resOK = result.contains("OK") ? true : false;
+                if (resOK)
+               	{
+                	Log.i("TASK", "GetInboxTask result OK");                	
+            		Fragment frag1 = getFragmentManager().findFragmentById(R.id.container);
+                }
+			} catch (JSONException e)
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}    
+            this.progressDialog.dismiss();
+            mInboxTask = null;			
+	    } // protected void onPostExecute(final Boolean success)
+	    
+		@Override
+		protected void onCancelled()
+		{
+            this.progressDialog.dismiss();
+            mInboxTask = null;
+		}
+	} // class GetInboxTask extends AsyncTask<Void, Void, Boolean>	

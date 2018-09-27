@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/gradient_background"
+    tools:context="com.eoksjon24.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:shadowColor="#8888ff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="20"
+        android:textSize="48sp" />
+
+    <Button
+        android:id="@+id/btnMain2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btnMain3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_gray_main"
+        android:drawableTop="@drawable/ic_menu_invite2"
+        android:padding="16dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="@string/main_button2"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMain1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/btnMain2"
+        android:background="@drawable/btn_gray_main"
+        android:drawableTop="@drawable/ic_menu_login2"
+        android:padding="16dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="@string/main_button1"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMain3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/btnMain2"
+        android:background="@drawable/btn_gray_main"
+        android:drawableTop="@drawable/ic_menu_find_holo_light2"
+        android:padding="16dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="@string/main_button3"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMain4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/btnMain1"
+        android:layout_alignRight="@+id/btnMain3"
+        android:layout_below="@+id/btnMain2"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_green_main"
+        android:drawableTop="@drawable/auction_hammer"
+        android:padding="16dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="@string/main_button4"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+	    android:id="@+id/layoutAuctionHeader"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+		android:background="@drawable/header_blue"
+	    android:paddingBottom="@dimen/layout_vertical_margin"
+	    android:paddingLeft="@dimen/layout_horizontal_margin"
+	    android:paddingRight="@dimen/layout_horizontal_margin"
+	    android:paddingTop="@dimen/layout_vertical_margin" >	    
+
+		<TextView
+		    android:id="@+id/txtTitle"
+		    style="@style/HeaderAuctionText"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/app_name"
+		    android:textAllCaps="true"
+		    android:textSize="12sp" />
+
+	</LinearLayout>
+    
+	<TextView
+          android:id="@+id/txtFieldName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:text="@string/prompt_old_password"
+          android:textColor="@android:color/holo_blue_dark"
+          android:textSize="12sp" />
+
+	<EditText
+          android:id="@+id/editField"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:inputType="textMultiLine"
+          android:gravity="top"
+          android:focusable="true"
+          android:descendantFocusability="beforeDescendants"
+          android:hint="" />
+	<requestFocus />
+ 
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="right"
+	    android:orientation="horizontal" >
+		
+	    <Button
+	        android:id="@+id/btn_cancel"
+	        style="@style/ButtonText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dp"
+	        android:background="@drawable/btn_red"
+	        android:minHeight="32dp"
+	        android:paddingLeft="32dp"
+	        android:paddingRight="32dp"
+	        android:text="@string/dialog_button_cancel" />
+	    
+	    <Button
+	        android:id="@+id/btn_confirm"
+	        style="@style/ButtonText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dp"
+	        android:background="@drawable/btn_green"
+	        android:minHeight="32dp"
+	        android:paddingLeft="32dp"
+	        android:paddingRight="32dp"
+	        android:text="@string/dialog_button_confirm" />
+	
+	</LinearLayout>
+	    	
+</LinearLayout>

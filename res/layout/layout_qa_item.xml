@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    <TextView
+		        android:id="@+id/txtBuyer"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="arnold" />
+		    <TextView
+		        android:id="@+id/txtDateTimeQ"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/darker_gray"
+		        android:layout_marginLeft="20dp"
+		        android:text="19.01.2016 16:49:51" />	 
+		</LinearLayout>
+	    <TextView
+	        android:id="@+id/txtBuyerQ"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:text="This article will show you how to create simple gradient line separators to spice up the layout a little bit." />	 
+	    <TextView
+	        android:id="@+id/txtBuyerWarning"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="@android:color/holo_red_dark"
+	        android:textSize="12sp"
+	        android:text="Hoiatus! Seda teksti on muudetud! Olete rikkunud eOksjon24.ee reegleid." />	 
+
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    <TextView
+		        android:id="@+id/txtSeller"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="oleg" />
+		    <TextView
+		        android:id="@+id/txtDateTimeA"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/darker_gray"
+		        android:layout_marginLeft="20dp"
+		        android:text="19.01.2016 16:49:51" />	 
+		</LinearLayout>
+	    <TextView
+	        android:id="@+id/txtSellerA"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:text="This article will show you how to create simple gradient line separators to spice up the layout a little bit." />	 
+
+	    <TextView
+	        android:id="@+id/txtSellerWarning"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:text="Hoiatus! Seda teksti on muudetud! Olete rikkunud eOksjon24.ee reegleid."
+	        android:textColor="@android:color/holo_red_dark"
+	        android:textSize="12sp" />
+	 
+</LinearLayout>

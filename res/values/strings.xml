@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eOksjon24</string>
+    <string name="title_activity_auth">Loo konto</string>
+    <string name="title_activity_registration">Registreerimine</string>
+    <string name="title_activity_browse">Kataloog</string>
+    <string name="title_activity_login">Logi sisse</string>
+    <string name="title_activity_new_auction">Uus oksjon</string>
+    <string name="title_activity_inbox">Uued teated</string>
+    
+    <string name="text_loading">Laadimine &#8230;</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_confirm">Kinnita</string>
+    <string name="dialog_button_cancel">Loobu</string>
+    <string name="dialog_button_yes">Jah</string>
+    <string name="prompt_user_account">Kasutaja</string>
+    <string name="promptChangePassword">Parooli muutmine</string>
+    <string name="prompt_password">Parool</string>
+    <string name="prompt_old_password">Vana parool</string>
+    <string name="prompt_new_password">Uus parool</string>
+    <string name="prompt_new_password_retry">Uus parool teist korda</string>
+    <string name="prompt_password_changed">Parool oli muudetud</string>
+    <string name="prompt_password_changed_error">Viga ! Parool on vale</string>
+    <string name="action_sign_in_register"><b>Logi sisse</b></string>
+    <string name="action_sign_in_short">Logi sisse</string>
+    <string name="action_forgot_password">Kadunud parool</string>
+    <string name="login_progress_signing_in">Sisselogimine&#8230;</string>
+    <string name="error_invalid_account">Kasutaja konto on vigane</string>
+    <string name="error_invalid_password">See parool on liiga lühike</string>
+    <string name="error_incorrect_account_or_password">Kasutaja nimi või parool on vale</string>
+    <string name="error_field_required">See väli on vajalik</string>
+    <string name="prompt_save_password">Jäta mind sisse logituks</string>
+    <string name="prompt_remove_avatar">Kustuta profiili avatar ?</string>
+    <string name="prompt_remove_email">Kustuta email</string>
+    <string name="prompt_cannot_add_email">Lisa uus email viga! Result: </string>
+    <string name="prompt_new_email">Uus email</string>
+    <string name="prompt_remove_bank">Kustuta konto</string>
+    <string name="prompt_cannot_add_bank">Lisa uus konto viga! Result: </string>
+    <string name="prompt_new_bank">Uus konto</string>
+    
+    <string name="main_button1">LOGI SISSE</string>
+    <string name="main_button1b">VÄLJA</string>
+    <string name="main_button2">LOO KONTO</string>
+    <string name="main_button2b">KONTO SEADED</string>
+    <string name="main_button2_">UUS OKSJON</string>
+    <string name="main_button3">SIRVI</string>
+    <string name="main_button4">LISA UUS &#8230;</string>
+    
+    <string name="prompt_logout">Logi välja ?</string>
+    
+    
+    <string name="drawer_section1">Lisa uus &#8230;</string>
+    <string name="drawer_section2">Uued teated</string>
+    <string name="drawer_section3">Kirjavahetus</string>
+    <string name="drawer_section4">eOksjon24.ee teated</string>
+    <string name="drawer_section5">Konto seaded</string>
+    <string name="drawer_section6">Välju</string>
+    <string name="text_save">Salvesta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Abi</string>
+    <string name="action_settings">Seaded</string>
+    <string name="login_main_title">Palun logige sisse</string>
+    <string name="login_auth_m_id">Valige Mobiil-ID\'ga autentimist</string>
+    <string name="login_auth_p_lingi">Sisene pangalingi kaudu</string>
+    <string name="text_personal_information">Isikuandmed</string>
+    <string name="text_user_account_info">Kasutajakonto info</string>
+    <string name="text_my_profile">Minu profiil</string>
+    <string name="prompt_fullname">Nimi, eesnimi</string>
+    <string name="prompt_personalcode">Isikukood</string>
+    <string name="promptUserName">Kasutajanimi</string>
+    <string name="prompt_street_house">Tänav, maja-krt</string>
+    <string name="prompt_city">Linn, vald, maakond</string>
+    <string name="prompt_postal">Sihtnumber</string>
+    <string name="prompt_country">Riigi tähis</string>
+    <string name="prompt_phone_nr">Telefon</string>
+    <string name="prompt_email">E-post</string>
+    <string name="prompt_bank">Pangakonto</string>
+    <string name="prompt_account_name">Kasutajanimi</string>
+    <string name="prompt_password_retry">Parool teist korda</string>
+    <string name="text_news1">Soovin saada tasuta uudiskirja</string>
+    <string name="text_news2">Soovin saada eOksjoni24.ee partnerite uudiskirju</string>
+    <string name="text_user_agreement">Kasutajaleping</string>
+    <string name="temp_big_text">Andmeid laadimine.....</string>
+    <string name="temp_FullName">BUGRÕŠOV DMITRI</string>
+    <string name="temp_IK">37511100243</string>
+    <string name="registration_register">Registreeru</string>
+    <string name="registration_user_occupied">See konto on juba kasutusel</string>
+    <string name="registration_user_lenght_error">Vale pikkuse</string>
+    <string name="registration_user_unknown_error">Tundmatu viga</string>
+    <string name="default_root_catalog_name">Vali kataloog</string>
+    <string name="browse_catalog_content">Kategooria tooted</string>
+    <string name="browse_item_time_left">Aega jäänud:</string>
+    <string name="browse_item_bids_total">Pakkumisi:</string>
+    <string name="title_activity_profile">Profiil</string>
+    <string name="profile_pic_from_camera">Uus profiilipilt kaamerast</string>
+    <string name="profile_pic_from_sd">Uus profiilipilt galeriist</string>
+    <string name="profile_email_list">E-posti nimekiri</string>
+    <string name="profile_bank_list">Kontod nimekiri</string>
+    <string name="profile_item_active">Aktiivne</string>
+    <string name="profile_item_new">Lisa uus</string>
+    <string name="profile_item_delete">Kustuta</string>
+    <string name="profile_avatar_delete">Kustuta profiilipilt</string>
+    <string name="profile_bank_info">Pangakonto, Pank</string>
+    <string name="title_activity_auction">Oksjon</string>
+    <string name="text_auction_id">Oksjoni ID:</string>
+    <string name="text_EUR">EUR</string>
+    <string name="text_current_price">Hetkehind:</string>
+    <string name="text_buy_now">Osta Kohe:</string>
+    <string name="text_new_offer">Uus pakkumine\nvõi automaatne pakkumine:</string>
+    <string name="text_button_make_offer">Tee pakkumine</string>
+    <string name="text_button_make_auto_offer">Tee automaatne pakkumine</string>
+    <string name="text_button_buy_now">Osta Kohe</string>
+    <string name="text_auction_info">Oksjoni info</string>
+    <string name="text_auction_time_left">Aega on:</string>
+    <string name="text_auction_closure">Pikenev lõpp:</string>
+    <string name="text_auction_start">Algusaeg:</string>
+    <string name="text_auction_end">Lõpuaeg:</string>
+    <string name="text_auction_watch">Vaadatud:</string>
+    <string name="text_auction_user_last_offer">Viimati pakkus:</string>
+    <string name="text_auction_details">Oksjoni detailid</string>
+    <string name="text_auction_offer_received">#user# tegi uue pakkumise summas #price# EUR"</string>
+    <string name="text_cannot_make_bid">Cannot make bid. Sorry.</string>
+    <string name="text_tab1">Eseme info</string>
+    <string name="text_tab2">Müüja info</string>
+    <string name="text_tab3">Pakkumised</string>
+    <string name="text_tab4">Küsimused müüjale</string>
+    <string name="text_auction_item_condition">Seisukord:</string>
+    <string name="text_auction_item_location">Asukoht:</string>
+    <string name="text_auction_items_total">Kogus:</string>
+    <string name="text_auction_item_change">Vahetus:</string>
+    <string name="text_auction_items_transport">Transpordi info:</string>
+    <string name="text_auction_item_payment">Makseviisid:</string>
+    <string name="text_auction_item_description">Eseme kirjeldus:</string>
+    <string name="text_user_account">Kasutaja:</string>
+    <string name="text_question_to_seller">Küsi müüjalt</string>
+    <string name="prompt_new_Question">Küsi müüjalt</string>
+    <string name="text_SEND">Saada teade</string>
+    <string name="text_CLOSE">Sulge</string>
+    <string name="text_YES">Jah</string>
+    <string name="text_NO">Ei</string>
+    <string name="text_filter">FILTREERI JA SORTEERI</string>
+    <string name="text_reset_filter">TÜHISTA FILTER</string>
+    <string name="text_content">Pealkiri</string>
+    <string name="text_filter_content">Pealkiri</string>
+    <string name="text_price">Hind</string>
+    <string name="text_filter_price">Hind</string>
+    <string name="text_price_start">Hind alates</string>
+    <string name="text_price_end">Hind kuni</string>
+    <string name="text_filter_offers">Pakkumiste arv</string>
+    <string name="text_offer_start">Algus</string>
+    <string name="text_offer_end">Lõpp</string>
+    <string name="text_filter_time_left">Aega jäänud</string>
+    <string name="text_sort">Sorteeri</string>
+    <string name="text_sort_asc">Sorteeri kasvavalt</string>
+    <string name="text_sort_desc">Sorteeri kahanevalt</string>
+    <string name="text_empty_filter">Otsing ei andnud tulemusi</string>
+    
+    <string name="text_prompt_exit_activity">Oksjoni tüüp</string>
+    <string name="text_step1">Oksjoni tüüp</string>
+    <string name="text_step2">Eseme info</string>
+    <string name="text_step2a">Pealkiri ja kirjeldus</string>
+    <string name="text_step3">Eseme pildid</string>
+    <string name="text_step4">Oksjoni info</string>
+    <string name="text_step5">Lisateenused</string>
+    <string name="text_step6">Ülevaade ja lisamine</string>
+    <string name="text_auction_type1">Fikseeritud hinnaga müük</string>
+    <string name="text_auction_type2">Oksjon</string>
+    <string name="text_step_save_and_continue">Salvesta ja edasi</string>
+    <string name="text_step_add_auction">Oksjon valmis</string>
+    <string name="text_step2_get_cat">Kategooriate valik</string>
+    <string name="text_step2_get_cat2">Lisakategooria valik</string>
+    <string name="text_step2_cat_back">TAGASI</string>
+    <string name="text_step2_cat_add">VALI LISAKATEGOORIA</string>
+    <string name="text_step2_add_new_cat">VALI LISAKATEGOORIA</string>
+    <string name="text_step2_active_cat">Teie valitud kategooriad:</string>
+    <string name="text_step2_title_info">Sisestage müüdava eseme nimetus. Sellest saab oksjoni pealkiri: *</string>
+    <string name="text_step2_title_info_hint">Pealkiri</string>
+    <string name="text_step2_desc">Kirjeldage müüdavat eset võimalikult täpselt:</string>
+    <string name="text_step2_desc_hint">Kirjeldus</string>
+    <string name="text_step2_desc_info">NB! Oksjoni kirjeldus ei tohi sisaldada müüja kontaktandmeid (telefon, e-post, kodulehekülg, &#8230;) ega ka viidet mõnele teisele leheküljele, mis sisaldab müüja kontaktandmeid.</string>
+    <string name="text_step2_location">Asukoht</string>
+    <string name="text_step2_location_info">Linn, vald, maakond: *</string>
+    <string name="text_step2_location_info_hint">Linn, vald, maakond</string>
+    <string name="text_step3_pic_from_camera">Lisa pilt kaamerast</string>
+    <string name="text_step3_pic_from_sd">Lisa pilt galeriist</string>
+    <string name="text_step3_info1">Kui te ei soovi pilte lisada, vajutage nupule Salvesta ja edasi !</string>
+    <string name="text_step3_info2">Esimene pilt määratakse avapildiks !</string>
+    <string name="text_step3_empty_content">Andmed puuduvad</string>
+    <string name="text_step4_start_price">Alghind: *</string>
+    <string name="text_step4_now_price">Osta Kohe hind:</string>
+    <string name="text_step4_can_change">Vahetuse võimalus</string>
+    <string name="text_step4_condition">Seisukord: *</string>
+    <string name="text_step4_condition_new">Uus</string>
+    <string name="text_step4_condition_used">Kasutatud</string>
+    <string name="text_step4_condition_old">Vana</string>
+    <string name="text_step4_condition_antiques">Antiikne</string>
+    <string name="text_step4_start_date">Algus kuupäev: *</string>
+    <string name="text_step4_start_time">Algusaeg: *</string>
+    <string name="text_step4_auction_duration">Oksjon kestab: *</string>
+    <string name="text_step4_auction_end">lõpeb:</string>
+    <string name="text_step4_ext_closure">Pikenev lõpp: *</string>
+    <string name="text_step4_2_min_more">2 minuti võrra</string>
+    <string name="text_step4_5_min_more">5 minuti võrra</string>
+    <string name="text_step4_10_min_more">10 minuti võrra</string>
+    <string name="text_step4_payment_methods">Makseviisid: *</string>
+    <string name="text_step4_pay_deposit">Deposiidiga</string>
+    <string name="text_step4_pay_auction24">eOksjon24\ne-konto kaudu</string>
+    <string name="text_step4_pay_cash">Sularahas</string>
+    <string name="text_step4_pay_via_bank">Pangaülekandega</string>
+    <string name="text_step4_transport">Transpordi info: *</string>
+    <string name="text_step4_transport_collect">Järeletulemisega</string>
+    <string name="text_step4_transport_accord">Kokkuleppel müüjaga</string>
+    <string name="prompt_new_auction_exit">Soovite lõpetada lisades oksjoni ?</string>
+    <string name="text_cannot_add_auction">Oksjoni lisamisel tekis viga</string>
+    <string name="text_cannot_set_item_exchange">Lisa Osta Kohe hind !</string>
+    <string name="text_select_date">Vali algus kuupäev</string>
+    <string name="text_select_time">Vali algusaeg</string>
+    
+    
+    <string-array name="array_of_auction_duration">
+        <item>1 päeva</item>
+        <item>2 päeva</item>
+        <item>3 päeva</item>
+        <item>4 päeva</item>
+        <item>5 päeva</item>
+        <item>6 päeva</item>
+        <item>7 päeva</item>
+        <item>9 päeva</item>
+        <item>10 päeva</item>
+        <item>14 päeva</item>
+        <item>28 päeva</item>
+    </string-array>
+
+    <string name="text_inbox_auction_name">Oksjon: </string>
+    <string name="text_inbox_replied">Vastus</string>
+    <string name="text_inbox_reply">>> Vasta</string>
+    <string name="text_inbox_dialog_btn_reply">Vasta</string>
+    <string name="text_inbox_mark_viewed">>> Märgi loetuks</string>
+    <string name="text_inbox_post_warning">Hoiatus! Seda teksti on muudetud! Olete rikkunud eOksjon24.ee reegleid.</string>
+    <string name="prompt_inbox_answer">Vastus</string>
+    
+    
+</resources>

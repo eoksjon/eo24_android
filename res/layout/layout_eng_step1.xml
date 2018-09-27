@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_eng_step1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/gradient_white"
+    tools:context="com.eoksjon24.NewAuctionActivity$PlaceholderFragment" >
+	
+	<LinearLayout
+	    android:id="@+id/layoutStep1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+		android:background="@drawable/header_purple" >	    
+
+		<TextView
+		    android:id="@+id/txtStep1"
+		    style="@style/HeaderAuctionText"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/text_step1"
+		    android:textAllCaps="true"
+		    android:textSize="12sp" />		
+	</LinearLayout>
+<!-- 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_step1"
+        android:textColor="@android:color/holo_orange_dark" />	
+	
+ -->	
+ 	<RadioGroup
+	    android:id="@+id/rg_auction_type"
+		android:checkedButton="@+id/rb_auction_type2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	    <RadioButton
+	        android:id="@+id/rb_auction_type2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_auction_type2" />
+ 	    	    	
+	    <RadioButton
+	        android:id="@+id/rb_auction_type1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_auction_type1" />	
+	
+	</RadioGroup>	
+		
+    <Button
+        android:id="@+id/step1_end_button"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_blue"
+        android:minHeight="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:enabled="true"
+        android:text="@string/text_step_save_and_continue" />						
+	
+</LinearLayout>
+		    

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_filter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_filter"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_green"
+        android:gravity="center"
+        android:minHeight="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="10dp"
+        android:text="@string/text_filter"
+        android:textSize="16sp" />
+
+	<LinearLayout
+        android:id="@+id/layout_filter_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	    
+	    <Button
+	        android:id="@+id/button_reset_filter"
+	        style="@style/ButtonText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_black"
+	        android:gravity="center"
+	        android:minHeight="32dp"
+	        android:paddingLeft="32dp"
+	        android:paddingRight="32dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/text_reset_filter"
+	        android:textSize="16sp" />
+	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/text_content"
+	        android:textColor="@android:color/holo_blue_dark"
+	        android:textSize="12sp" />
+	
+	    <EditText
+	        android:id="@+id/et_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/text_content"
+	        android:inputType="text"
+	        android:maxLines="1"
+	        android:singleLine="true" />
+	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/text_price"
+	        android:textColor="@android:color/holo_blue_dark"
+	        android:textSize="12sp" />
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <EditText
+	            android:id="@+id/et_price_start"
+	            android:layout_width="120dip"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/text_price_start"
+	            android:imeOptions="actionUnspecified"
+	            android:inputType="numberDecimal"
+	            android:maxLines="1"
+	            android:selectAllOnFocus="true"
+	            android:singleLine="true" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:text="-" />
+	
+	        <EditText
+	            android:id="@+id/et_price_end"
+	            android:layout_width="120dip"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/text_price_end"
+	            android:imeOptions="actionUnspecified"
+	            android:inputType="numberDecimal"
+	            android:maxLines="1"
+	            android:selectAllOnFocus="true"
+	            android:singleLine="true" />
+	    </LinearLayout>
+<!--	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/text_offers"
+	        android:textColor="@android:color/holo_blue_dark"
+	        android:textSize="12sp" />
+	
+ 	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <EditText
+	            android:id="@+id/et_offer_start"
+	            android:layout_width="120dip"
+	            android:layout_height="wrap_content"
+	            android:digits="0123456789"
+	            android:hint="@string/text_offer_start"
+	            android:inputType="number|none"
+	            android:maxLength="3"
+	            android:maxLines="1"
+	            android:singleLine="true" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:text="-" />
+	
+	        <EditText
+	            android:id="@+id/et_offer_end"
+	            android:layout_width="120dip"
+	            android:layout_height="wrap_content"
+	            android:digits="0123456789"
+	            android:ems="10"
+	            android:hint="@string/text_offer_end"
+	            android:inputType="number|none"
+	            android:maxLength="3"
+	            android:maxLines="1"
+	            android:singleLine="true" />
+	    </LinearLayout>
+ -->	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/text_sort"
+	        android:textColor="@android:color/holo_blue_dark"
+	        android:textSize="12sp" />
+	    
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+		    <RadioGroup
+		        android:id="@+id/rg_sort_field"
+		        android:layout_width="150dp"
+		        android:layout_height="wrap_content" >
+	
+		        <RadioButton
+		            android:id="@+id/ri_time_left"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:checked="true"
+		            android:text="@string/text_filter_time_left" />
+		        		
+		        <RadioButton
+		            android:id="@+id/ri_content"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/text_filter_content" />
+		
+		        <RadioButton
+		            android:id="@+id/ri_price"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/text_filter_price" />
+		
+		        <RadioButton
+		            android:id="@+id/ri_offers"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/text_filter_offers" />
+		        
+		    </RadioGroup>
+		
+			<RadioGroup
+			    android:id="@+id/rg_sort_direction"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" >
+			
+			    <RadioButton
+			        android:id="@+id/ri_ASC"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:checked="true"
+			        android:text="@string/text_sort_asc" />
+			
+			    <RadioButton
+			        android:id="@+id/ri_DESC"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/text_sort_desc" />
+			
+			</RadioGroup>
+	
+	    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/button_filter2"
+	        style="@style/ButtonText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_green"
+	        android:gravity="center"
+	        android:minHeight="32dp"
+	        android:paddingLeft="32dp"
+	        android:paddingRight="32dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/text_filter"
+	        android:textSize="16sp" />
+    
+	</LinearLayout>
+    
+</LinearLayout>

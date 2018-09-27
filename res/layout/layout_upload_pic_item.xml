@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_upload_pic_item"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@drawable/content_item"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/gradient" />
+    <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/btnMoveUp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@android:drawable/arrow_up_float" />
+
+    <ImageButton
+        android:id="@+id/btnMoveDown"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/btnRemove"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@android:drawable/ic_delete" />
+
+</LinearLayout>

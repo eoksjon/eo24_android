@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_eng_step2"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/gradient_white"
+    tools:context="com.eoksjon24.NewAuctionActivity$PlaceholderFragment" >
+	
+	<LinearLayout
+	    android:id="@+id/layoutStep2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+		android:background="@drawable/header_purple" >	    
+
+		<TextView
+		    style="@style/HeaderAuctionText"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/text_step2"
+		    android:textAllCaps="true"
+		    android:textSize="12sp" />		
+	</LinearLayout>
+
+    <LinearLayout
+	    android:id="@+id/layoutGetCatSection"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:background="#FFFFDD"
+	    android:orientation="vertical" >
+	
+    	<TextView
+		    android:id="@+id/textGetCat"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/text_step2_get_cat"
+	        android:textColor="@android:color/holo_orange_dark" />			
+	
+	    <TextView
+		    android:id="@+id/txtCategoriesPath"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			style="@style/ButtonText"
+	        android:text=""
+	        android:textColor="@android:color/holo_blue_dark" />			
+	
+	    <LinearLayout
+		    android:id="@+id/layoutGetCat"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >	    
+	 	</LinearLayout>
+	 	
+	</LinearLayout>
+	    
+    
+    	    
+    <LinearLayout
+	    android:id="@+id/layoutStep2ActiveCat"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/text_step2_active_cat"
+	        android:textColor="@android:color/holo_orange_dark" />			    
+	    	    
+	    <LinearLayout
+		    android:id="@+id/layoutActiveCat"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+		    android:orientation="vertical" >	    
+	 	</LinearLayout>
+	    	    
+	</LinearLayout>
+	    
+    <Button
+        android:id="@+id/step2a_end_button"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_blue"
+        android:minHeight="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:enabled="false"
+        android:text="@string/text_step_save_and_continue" />
+    
+	    
+	    	    
+	    
+    <LinearLayout
+	    android:id="@+id/layoutStep2TitleSection"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:orientation="vertical" >
+    	    
+	 	<LinearLayout
+		    android:id="@+id/layoutStep2a"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+			android:background="@drawable/header_purple" >	    
+	
+			<TextView
+			    style="@style/HeaderAuctionText"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/text_step2a"
+			    android:textAllCaps="true"
+			    android:textSize="12sp" />		
+		</LinearLayout>
+	    
+	    	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:textSize="12sp"
+	        android:text="@string/text_step2_title_info" />			     
+	     
+		<EditText
+	        android:id="@+id/editTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/text_step2_title_info_hint"
+	        android:inputType="textCapSentences"
+	        android:imeOptions="actionUnspecified"
+	        android:maxLines="1"
+	        android:singleLine="true" />
+	     	
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:textSize="12sp"
+	        android:text="@string/text_step2_desc" />			     
+		
+		<EditText
+	        android:id="@+id/editDesc"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:inputType="textMultiLine|textCapSentences"
+	        android:gravity="top"
+	        android:hint="@string/text_step2_desc_hint"
+	        android:imeOptions="actionUnspecified" />
+	
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:textSize="12sp"
+	        android:text="@string/text_step2_desc_info" />			     
+		
+	     <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/text_step2_location"
+	        android:textColor="@android:color/holo_orange_dark" />			
+	
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:textSize="12sp"
+	        android:text="@string/text_step2_location_info" />			     
+		
+		<EditText
+	        android:id="@+id/editLocation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/text_step2_location_info_hint"
+	        android:inputType="textCapSentences"
+	        android:imeOptions="actionUnspecified"
+	        android:maxLines="1"
+	        android:singleLine="true" />
+
+	    <Button
+	        android:id="@+id/step2_end_button"
+	        style="@style/ButtonText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:layout_marginTop="16dp"
+	        android:background="@drawable/btn_blue"
+	        android:minHeight="32dp"
+	        android:paddingLeft="32dp"
+	        android:paddingRight="32dp"
+	        android:enabled="false"
+	        android:text="@string/text_step_save_and_continue" />
+					
+ 	</LinearLayout>				
+	
+</LinearLayout>
+		    
